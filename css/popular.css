@@ -574,13 +574,106 @@ body.mobile-nav-active #mobile-nav-toggle i{
 Main-menu
 ----------------------------------*/
 /*----------------------------------
+banner-sub
+----------------------------------*/
+.banner-sub{
+    position: relative;
+    top: -20px;
+    z-index: 0;
+}
+.banner-sub-main .owl-dots {
+    position: relative;
+    top: -60px;
+}
+.banner-sub-main .owl-dots .owl-dot span {
+    background-color: #fff;
+    border: 3px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.banner-sub-main .owl-dots .owl-dot.active span,
+.banner-sub-main .owl-dots .owl-dot:hover span {
+    background-color: transparent;
+    border-color: #fff;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.banner-sub-main .owl-nav [class*=owl-] {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.banner-sub-main .owl-nav [class*=owl-]:hover {
+    background-color: var(--main-color);
+}
+
+.banner-sub-caption {
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-sub-caption h4 {
+    font-size: 1.875rem;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+.banner-sub-caption p::before{
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-color);
+  display: block;
+  margin: 0 auto 10px;
+}
+.banner-sub-caption p {
+    font-size: 1.75rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+    margin-top: 20px;
+    color: #fff;
+    font-style: italic;
+}
+.h-banner-sub{
+    height: 300px;
+}
+.breadcrumb{
+  background-color: transparent;
+}
+.breadcrumb-item a{
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.breadcrumb-item.active{
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*----------------------------------
 footer
 ----------------------------------*/
 .footer{
   background-color: var(--main-color);
   padding: 30px 0;
-  position: relative;
-  top: -105px;
 }
 .footer img{
   width: 80%;
@@ -606,11 +699,14 @@ footer
 }
 .add-ct{
   font-size: 0.875rem;
+  color: #fff;
+}
+.add-ct:hover{
+  color: #FFF;
 }
 .footer-bottom{
   background-color: #222222;
   padding: 8px 0;
-  margin-top: -105px;
 }
 .footer-bottom p{
   font-size: 0.75rem;

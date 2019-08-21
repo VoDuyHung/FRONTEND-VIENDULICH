@@ -32,7 +32,19 @@ $(document).ready(function() {
         mouseDrag: true,
         autoplayTimeout: 5000,
     });
-     $('.banner-main').owlCarousel({
+    $('.banner-main').owlCarousel({
+        items: 1,
+        nav: false,
+        autoHeight: true,
+        slideSpeed: 1000,
+        paginationSpeed: 1000,
+        dots: true,
+        loop: true,
+        autoplay: true,
+        mouseDrag: true,
+        autoplayTimeout: 5000,
+    });
+    $('.banner-sub-main').owlCarousel({
         items: 1,
         nav: false,
         autoHeight: true,
@@ -97,9 +109,9 @@ $(document).ready(function() {
         return false;
     });
     new WOW().init();
-    
+
     // Initiate superfish on nav menu
-    
+
     // Mobile Navigation
     if ($('#nav-menu-container').length) {
         var $mobile_nav = $('#nav-menu-container').clone().prop({
@@ -190,17 +202,40 @@ $(document).ready(function() {
         allowClear: true
     });
 });
-    function initMap() {
-        var uluru = {
-            lat: 16.089957,
-            lng: 108.217051
-        };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 18,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
+
+function initMap() {
+    var uluru = {
+        lat: 16.089957,
+        lng: 108.217051
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}
+$(document).ready(function() {
+    size_li = $("#mess1 .message-items").size();
+    x = 3;
+    $('#mess1 .message-items:lt(' + x + ')').show();
+    $('#show-more').click(function() {
+        x = (x + 5 <= size_li) ? x + 5 : size_li;
+        $('#mess1 .message-items:lt(' + x + ')').show();
+        $('#showLess').show();
+        if (x == size_li) {
+            $('#show-more').hide();
+        }
+    });
+    $('#showLess').click(function() {
+        x = (x - 5 < 0) ? 3 : x - 5;
+        $('#mess1 .message-items').not(':lt(' + x + ')').hide();
+        $('#show-more').show();
+        $('#show-less').show();
+        if (x == 3) {
+            $('#show-less').hide();
+        }
+    });
+});

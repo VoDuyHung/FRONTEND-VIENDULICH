@@ -429,6 +429,25 @@ Home-news
     margin-left: 20px;
     margin-top: 10px;
 }
+
+#mess1 .message-items{ 
+    display:none;
+}
+#show-more {
+    color:green;
+    cursor:pointer;
+}
+#show-more:hover {
+    color:black;
+}
+#show-less {
+    color:red;
+    cursor:pointer;
+    display:none;
+}
+#show-less:hover {
+    color:black;
+}
 /*----------------------------------
 feedback
 ----------------------------------*/
@@ -437,6 +456,8 @@ feedback
     position: relative;
     top: -215px;
     padding: 60px 0 ;
+    background-attachment: fixed !important;
+    overflow: hidden;
 }
 .fb-title{
     color: #fff;
@@ -572,8 +593,8 @@ activities
     text-align: justify;
 }
 .home-activities{
-    position: relative;
-    top: -150px;
+    margin-top: -150px;
+    margin-bottom: 45px;
 }
 .activities-items{
     margin-bottom: 10px;
