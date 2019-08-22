@@ -1,5 +1,5 @@
 /*----------------------------------
-subpage-sidebar
+about-us
 ----------------------------------*/
 .sub-page{
 	margin-top: -30px;
@@ -23,4 +23,301 @@ subpage-sidebar
 	font-size: 1.625rem;
 	font-weight: bold;
 	font-style: normal;
+}
+
+.me-admin__imgbox{
+	display:  block;
+}
+.me-admin--path{
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 76%);
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 76%);
+	height: 200px;
+}
+.me-admin--path1{
+	-webkit-clip-path: polygon(0 0,100% 20%, 100% 100%, 0 100%);
+	clip-path: polygon(0 0,100% 20%, 100% 100%, 0 100%);
+	height: 142px;
+	position: relative;
+	top: -38px;
+}
+.me-admin--path2{
+	-webkit-clip-path: polygon(0 0,100% 13%, 100% 100%, 0 100%);
+	clip-path: polygon(0 0,100% 13%, 100% 100%, 0 100%);
+	height: 110px;
+	position: relative;
+	top: -7px;
+}
+.p-15{
+	padding-left: 0;
+}
+.pright-5{
+	padding-right: 8px;
+}
+.me-admin__img{
+	-webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.me-admin__img::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.me-admin__imgbox:hover .me-admin__img::before, 
+.me-admin__imgbox:focus .me-admin__img::before{
+  opacity: 0.5;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.subpage-content-title{
+	font-size: 1.625rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-family: var(--main-font);
+}
+.subpage-content-title::before{
+	content: "";
+	width: 5px;
+	height: 20px;
+	background-color: var(--main-color);
+	display: inline-block;
+	margin-right: 8px;
+}
+.aboutus-vision{
+	margin-bottom: 40px;
+}
+.about-box{
+	border: 1px solid #dfdfdf;
+	padding:  25px 0;
+}
+.barges{
+	background-color: var(--main-color);
+	color: #fff;
+	padding: 3px 20px;
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 1rem;
+	display: inline-block;
+	position: relative;
+	top: -40px;
+}
+.content-node{
+	margin-top: -20px;
+}
+.aboutus-vision{
+	margin-top: 20px;
+}
+.aboutus-vision .content-node p{
+	font-family: var(--main-font);
+	font-weight: bold;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+.aboutus-vision .content-node p i{
+	color: #dce0e2;
+    display: inline-block;
+    margin: 0 10px;
+}
+.aboutus-mission{
+	padding: 25px 100px 15px;
+	margin-bottom: 40px;
+}
+.mission-ct{
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+.mission-ct i{
+	color: var(--main-color);
+	display: inline-block;
+	margin-right: 10px;
+}
+.aboutus-slogan-items h4{
+	font-family: var(--main-font);
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-style: italic;
+}
+.aboutus-slogan-items p{
+	font-size: 1rem;
+	margin-top: 10px;
+}
+.aboutus-slogan{
+	margin-bottom: 40px;
+}
+/*----------------------------------
+Faculty & center
+----------------------------------*/
+.faculty-content{
+	margin-bottom: 50px;
+}
+.faculty-article{
+	margin-bottom: 15px;
+}
+.circle{
+	background-color: #dfdfdf;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+	top: 10px
+}
+.fa-article-title{
+	font-size: 1.25rem;
+	font-family: var(--main-font);
+	font-weight: 600;
+	margin-bottom: 15px;
+	position: relative;
+	left: -25px;
+	display: inline-block;
+}
+.fa-article-title span{
+	font-family: var(--main-font);
+	font-size: 1.25rem;
+	font-weight: 800;
+	color: var(--main-color);
+	display: inline-block;
+	margin-right: 10px;
+}
+.fa-article-des{
+	line-height: 22px;
+	margin-bottom: 7px;
+	text-align: justify;
+}
+
+.fa-article-content{
+	padding-left: 25px;
+}
+.fa-article-content li{
+	margin-bottom: 10px;
+}
+.fa-ar-ct-items{
+	display: flex;
+}
+.fa-ar-ct-items i{
+	font-size: 0.8125rem;
+	color: var(--main-color);
+	display: inline-block;
+	margin-right: 7px;
+	position: relative;
+	top: 3px;
+}
+.fa-ar-ct-items-txt h5{
+	font-size: 0.875rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: var(--main-font);
+}
+.fa-ar-ct-items-txt p{
+	line-height: 22px;
+}
+
+/*----------------------------------
+Meet the dean
+----------------------------------*/
+.avatar{
+	margin-bottom: 20px;
+}
+.avatar-cirle{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.avatar-img{
+	width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.avatar p{
+	display: inline-block;
+	font-family: var(--main-font);
+	font-size: 1.15rem;
+	font-weight: bold;
+	position: relative;
+	top: -35px;
+	margin-left: 20px;
+}
+.meet-des{
+	margin-bottom: 50px;
+}
+.meet-des p{
+	line-height: 22px;
+	margin-bottom: 7px;
+	text-align: justify;
+	font-weight: 500;
+}
+
+/*----------------------------------
+alumini
+----------------------------------*/
+.alumni-des{
+	line-height: 22px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+.avatar-alumni{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.avatar-alumni-img{
+	width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.alu-infor{
+	max-width: 85%;
+	margin-left: 20px;
+}
+.alu-infor h4{
+	font-size: 1rem;
+	font-family: var(--main-font);
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.alu-infor .alu-job{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.alu-job-des i{
+	color: var(--main-color);
+	font-size: 1rem;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.alu-job-des p{
+	text-align: justify;
+	line-height: 22px;
+	margin-bottom: 5px;
+}
+.alumni-people{
+	border-bottom: 1px solid #dfdfdf;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	display: flex;
+}
+.alumni-people:last-child{
+	border-bottom: none;
 }

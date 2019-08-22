@@ -76,26 +76,6 @@ $(document).ready(function() {
             },
         }
     });
-    $('.related-topic-list').owlCarousel({
-        loop: true,
-        responsiveClass: true,
-        dots: true,
-        autoplay: true,
-        margin: 30,
-        nav: false,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            },
-        }
-    });
     // Back to top button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -185,22 +165,51 @@ $(document).ready(function() {
             }
         }
     });
-    // Search Active Code
-    $('.btn-search, #closeBtn').on('click', function() {
-        $('body').toggleClass('search-form-on');
-    });
-    $('.advance-select').select2({
-        placeholder: "Lĩnh vực",
-        allowClear: true
-    });
-    $('.advance-select1').select2({
-        placeholder: "Thể loại",
-        allowClear: true
-    });
-    $('.advance-select2').select2({
-        placeholder: "Cơ quan ban hành",
-        allowClear: true
-    });
+     var x = 3;
+     var size_li = document.getElementById("mess1").getElementsByTagName("li").length;
+     $("#mess1 li").slice(0, x).show();
+     $(document).on('click','#show-more',function(e){
+        x = (x + 5 <= size_li) ? x + 5 : size_li;
+         e.preventDefault();
+         $("#mess1 li").slice(0, x).show();
+         $('#show-less').show();
+         if(x == size_li){
+            $('#show-more').hide();
+         }
+     });
+     $(document).on('click','#show-less',function(e){
+         x = (x - 5 < 0) ? 3 : x - 5;
+         e.preventDefault();
+         $("#mess1 li").slice(0, x).hide();
+         $('#show-more').show();
+         $('#show-less').show();
+         if(x == 3){
+            $('#show-less').hide();
+         }
+     });
+
+     var x1 = 3;
+     var size_li1 = document.getElementById("mess2").getElementsByTagName("li").length;
+     $("#mess2 li").slice(0, x1).show();
+     $(document).on('click','#show-more1',function(e){
+        x1 = (x1 + 5 <= size_li1) ? x1 + 5 : size_li1;
+         e.preventDefault();
+         $("#mess2 li").slice(0, x1).show();
+         $('#show-less1').show();
+         if(x1 == size_li1){
+            $('#show-more1').hide();
+         }
+     });
+     $(document).on('click','#show-less1',function(e){
+         x1 = (x1 - 5 < 0) ? 3 : x1 - 5;
+         e.preventDefault();
+         $("#mess2 li").slice(0, x1).hide();
+         $('#show-more1').show();
+         $('#show-less1').show();
+         if(x1 == 3){
+            $('#show-less1').hide();
+         }
+     });
 });
 
 function initMap() {
@@ -217,25 +226,3 @@ function initMap() {
         map: map
     });
 }
-$(document).ready(function() {
-    size_li = $("#mess1 .message-items").size();
-    x = 3;
-    $('#mess1 .message-items:lt(' + x + ')').show();
-    $('#show-more').click(function() {
-        x = (x + 5 <= size_li) ? x + 5 : size_li;
-        $('#mess1 .message-items:lt(' + x + ')').show();
-        $('#showLess').show();
-        if (x == size_li) {
-            $('#show-more').hide();
-        }
-    });
-    $('#showLess').click(function() {
-        x = (x - 5 < 0) ? 3 : x - 5;
-        $('#mess1 .message-items').not(':lt(' + x + ')').hide();
-        $('#show-more').show();
-        $('#show-less').show();
-        if (x == 3) {
-            $('#show-less').hide();
-        }
-    });
-});

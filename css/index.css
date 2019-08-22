@@ -91,7 +91,7 @@ home-program
     border-top: 10px solid var(--main-color);
     padding: 45px 0;
     background-color: #fff;
-    box-shadow: 10px 10px 30px 0px rgba(123, 123, 123, 0.5);
+    box-shadow: 5px 5px 30px 0px rgba(123, 123, 123, 0.3);
 }
 .home-program .title-program{
     font-family: var(--main-font);
@@ -112,6 +112,15 @@ home-program
     width: auto;
     display: inline-block;
     margin-right: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.item-pr:hover img{
+    -ms-transform: translateY(-7px);
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
 }
 .txt-pr h4{
     font-family: var(--main-font);
@@ -124,6 +133,9 @@ home-program
     font-size: 1.125rem;
     font-weight: 500;
 }
+.item-pr:hover{
+    color: var(--main-color);
+}
 .b-right{
     border-right: 1px solid #dfdfdf;
 }
@@ -131,8 +143,7 @@ home-program
 Home-news
 ----------------------------------*/
 .home-news{
-    position: relative;
-    top: -150px;
+    margin-top: -150px;
 }
 .home-news .home-title{
     font-weight: bold;
@@ -403,8 +414,7 @@ Home-news
     transition: 0.5s;
 }
 .home-infor{
-    position: relative;
-    top: -58px;
+    margin-top: -58px;
 }
 .home-infor-i{
     margin-bottom: 20px;
@@ -433,31 +443,39 @@ Home-news
 #mess1 .message-items{ 
     display:none;
 }
-#show-more {
-    color:green;
-    cursor:pointer;
-}
-#show-more:hover {
-    color:black;
-}
-#show-less {
-    color:red;
-    cursor:pointer;
+#mess2 li{ 
     display:none;
 }
-#show-less:hover {
-    color:black;
+#show-more,#show-more1 {
+    padding: 20px 20px;
+    border: 1px solid #dfdfdf;
+    cursor: pointer;
+    display: block;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-weight: bold;
 }
+
+#show-less,#show-less1 {
+    padding: 20px 20px;
+    border: 1px solid #dfdfdf;
+    border-top: 0;
+    cursor: pointer;
+    display: none;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-weight: bold;
+}
+
 /*----------------------------------
 feedback
 ----------------------------------*/
 .feedback{
     height: 530px;
-    position: relative;
-    top: -215px;
     padding: 60px 0 ;
     background-attachment: fixed !important;
     overflow: hidden;
+    margin-top: -5px;
 }
 .fb-title{
     color: #fff;
@@ -593,7 +611,7 @@ activities
     text-align: justify;
 }
 .home-activities{
-    margin-top: -150px;
+     margin-top: 50px;
     margin-bottom: 45px;
 }
 .activities-items{

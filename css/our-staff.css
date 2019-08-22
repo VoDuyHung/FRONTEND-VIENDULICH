@@ -1,0 +1,59 @@
+/*----------------------------------
+page-simple
+----------------------------------*/
+.p-simple-title{
+	font-size: 2rem;
+	font-family: var(--main-font);
+	font-weight: bold;
+}
+.p-simple-title::after{
+	content: "";
+	width: 100px;
+	height: 2px;
+	background-color: var(--main-color);
+	display: block;
+	margin: 10px auto;
+}
+.p-simple-des{
+	line-height: 22px;
+	margin: 20px 0 30px;
+}
+
+/*----------------------------------
+staff
+----------------------------------*/
+.staff-content{
+	padding-bottom: 40px;
+}
+.staff-infor{
+	margin-bottom: 80px;
+}
+.staff-avatar{
+	width: 70%;
+	height: auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.staff-avatar-img{
+	width: 90%;
+    height: 200px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.staff-infor-ct{
+	background-color: var(--main-color);
+	padding: 10px 15px;
+	color: #fff;
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+}
+.staff-name{
+	font-size: 1.25rem;
+	font-family: var(--main-font);
+}
+.staff-job{
+	font-size: 0.875rem;
+}
