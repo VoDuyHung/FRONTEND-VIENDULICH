@@ -51,3 +51,33 @@ hotel & Restaurant
 	text-align: justify;
 	font-weight: 500;
 }
+.sibebar-nav i{
+	color: var(--main-color);
+	font-size: 0.875rem;
+	display: inline-block;
+	margin-right: 10px;
+}
+.sibebar-nav li a{
+	font-family: var(--main-font);
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #dfdfdf;
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.sibebar-nav li a:hover,
+.sibebar-nav li a:focus,
+.sibebar-nav li a.active{
+	color: var(--main-color);
+	font-style: italic;
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.sibebar-nav li:last-child a{
+	border-bottom: none;
+}
