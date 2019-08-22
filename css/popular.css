@@ -738,7 +738,6 @@ footer
   .footer img{
     height: 60px;
     width: auto;
-
   }
   .menu-has-children a i{
     display: none;
@@ -758,6 +757,12 @@ footer
     left: 0;
     bottom: 0;
     z-index: 998;
+  }
+  .banner-sub-caption p,.banner-sub-caption h4{
+    font-size: 1.25rem;
+  }
+  .banner-sub-caption{
+    padding: 90px 0;
   }
 }
 @media (max-width: 575px){

@@ -24,7 +24,36 @@ about-us
 	font-weight: bold;
 	font-style: normal;
 }
-
+.sibebar-nav i{
+	color: var(--main-color);
+	font-size: 0.875rem;
+	display: inline-block;
+	margin-right: 10px;
+}
+.sibebar-nav li a{
+	font-family: var(--main-font);
+	font-weight: 600;
+	font-size: 1.125rem;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #dfdfdf;
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.sibebar-nav li a:hover,
+.sibebar-nav li a:focus,
+.sibebar-nav li a.active{
+	color: var(--main-color);
+	font-style: italic;
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.sibebar-nav li:last-child a{
+	border-bottom: none;
+}
 .me-admin__imgbox{
 	display:  block;
 }
@@ -46,6 +75,12 @@ about-us
 	height: 110px;
 	position: relative;
 	top: -7px;
+}
+.about-des-img{
+	float: left;
+	width: 50%;
+	margin-right: 20px;
+	margin-bottom: -20px;
 }
 .p-15{
 	padding-left: 0;
@@ -130,11 +165,11 @@ about-us
     margin: 0 10px;
 }
 .aboutus-mission{
-	padding: 25px 100px 15px;
+	padding: 25px 70px 15px 70px;
 	margin-bottom: 40px;
 }
 .mission-ct{
-	font-size: 1rem;
+	font-size: 0.875rem;
 	margin-bottom: 10px;
 }
 .mission-ct i{
@@ -154,6 +189,14 @@ about-us
 }
 .aboutus-slogan{
 	margin-bottom: 40px;
+}
+.sub-content-txt p{
+	text-align: justify;
+	line-height: 22px;
+	margin-bottom: 7px;
+}
+.sub-content-txt{
+	margin-bottom: 30px;
 }
 /*----------------------------------
 Faculty & center
@@ -320,4 +363,50 @@ alumini
 }
 .alumni-people:last-child{
 	border-bottom: none;
+}
+@media (max-width: 991px) {
+	.title-subpage-sidebar br{
+		display: none;
+	}
+	.title-subpage-sidebar p span{
+		display: inline-block;
+		margin: 0 5px;
+	}
+	.title-subpage-sidebar p{
+		font-style: normal;
+	}
+	.sibebar-nav{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.title-subpage-sidebar p span,
+	.title-subpage-sidebar p{
+		font-size: 1rem;
+	}
+	.aboutus-vision .content-node p{
+		font-size: 1rem;
+	}
+	.aboutus-mission{
+		padding: 25px;
+	}
+	.circle{
+		display: none;
+	}
+	.fa-article-title{
+		position: static;
+		font-size: 1rem;
+	}
+}
+@media (max-width: 575px) {
+	.alumni-people{
+		display: block;
+	}
+	.alu-infor{
+		margin-left: 0;
+	}
+	.about-des-img{
+		float: none;
+		width: 100%;
+	}
 }

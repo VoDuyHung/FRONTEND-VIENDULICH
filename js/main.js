@@ -14,6 +14,25 @@ $(document).ready(function() {
             $('.banner').css("padding-top", "0px");
         }
     });
+    $(function() {
+        var url = window.location.pathname;
+        var activePage = url.substring(url.lastIndexOf('/') + 1);
+        var activePage1 = url.substring(url.lastIndexOf('/') + 1);
+         $('.sibebar-nav li a').each(function() {
+            var linkPage = this.href.substring(this.href.lastIndexOf('/') + 1);
+            if (activePage1 == linkPage) {
+                $(this).closest('a').addClass('active');
+            }
+        })
+
+        $('#header li a').each(function() {
+            var linkPage = this.href.substring(this.href.lastIndexOf('/') + 1);
+            if (activePage == linkPage) {
+                $(this).closest('li').addClass('menu-active');
+            }
+        });
+    });
+       
     $('.nav-menu').superfish({
         animation: {
             opacity: 'show'
