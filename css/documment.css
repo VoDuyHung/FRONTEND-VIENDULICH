@@ -221,3 +221,48 @@ sidebar
     display: inline-block;
     margin-left: 15px;
 }
+.attached-files{
+    margin-bottom: 30px;
+}
+.attached-files p{
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.attached-files p i{
+    color: var(--main-color);
+    display: inline-block;
+    margin-right: 10px;
+}
+.attached-files ul{
+    margin-left: 20px;
+}
+.attached-files li{
+    margin-bottom: 7px;
+}
+.attached-files li::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: inline-block;
+    margin-right: 7px;
+    position: relative;
+    top: -2px;
+}
+.attached-files li a{
+    color: #0063c9;
+    font-weight: 600;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.attached-files li a:hover{
+    color: var(--main-color);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
