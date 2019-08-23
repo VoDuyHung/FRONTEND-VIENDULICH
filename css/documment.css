@@ -70,7 +70,9 @@ document
 }
 
 
-
+/*----------------------------------
+sidebar
+----------------------------------*/
 .sidebar-title{
     font-family: var(--font-family);
     font-size: 20px;
@@ -183,6 +185,10 @@ document
 .sidebar-document .btn-secondary:focus {
     box-shadow: none;
 }
+/*----------------------------------
+sidebar
+----------------------------------*/
+
 
 .document-detail{
     border-bottom: 1px solid #dfdfdf;

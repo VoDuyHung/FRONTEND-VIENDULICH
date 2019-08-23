@@ -179,3 +179,38 @@ staff-detail
 		font-size: 0.75rem;
 	}
 }
+
+.staff-related .owl-dots .owl-dot span {
+    background-color: var(--main-color);
+    border: 3px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.staff-related .owl-dots .owl-dot.active span,
+.staff-related .owl-dots .owl-dot:hover span {
+    background-color: transparent;
+    border-color: var(--main-color);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.staff-related .owl-nav [class*=owl-] {
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.staff-related .owl-nav [class*=owl-]:hover {
+    background-color: var(--main-color);
+}
