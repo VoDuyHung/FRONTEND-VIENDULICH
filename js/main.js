@@ -75,6 +75,18 @@ $(document).ready(function() {
         mouseDrag: true,
         autoplayTimeout: 5000,
     });
+    $('.acitivity-image').owlCarousel({
+        items: 1,
+        nav: false,
+        autoHeight: true,
+        slideSpeed: 1000,
+        paginationSpeed: 1000,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        mouseDrag: true,
+        autoplayTimeout: 5000,
+    });
     $('.feedback-content').owlCarousel({
         loop: true,
         responsiveClass: true,

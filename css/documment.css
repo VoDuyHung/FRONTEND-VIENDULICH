@@ -1,0 +1,213 @@
+/*----------------------------------
+document
+----------------------------------*/
+.document-node{
+    display: flex;
+    border-bottom: 1px dashed #dfdfdf;
+    margin-bottom: 20px;
+}
+.document-node:last-child{
+    border-bottom: none;
+}
+.document-node i{
+    color: var(--main-color);
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.d-title{
+    font-size: 1rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #000;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.d-date{
+    font-size: 0.875rem;
+    color: #9a9ea2;
+    margin-bottom: 5px;
+}
+.d-des{
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #000
+}
+.document-node:hover .d-title{
+    color: var(--main-color);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.pagination{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.page-item{
+    margin: 0 5px;
+}
+.page-item a{
+    font-size: 14px;
+    color: #555;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.page-item a:hover{
+    background-color: rgba(192, 32, 47, 0.1);
+    color: var(--main-color);
+}
+.page-item.active a{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+
+.sidebar-title{
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.sidebar-title::before{
+    content: "";
+    height: 15px;
+    width: 4px;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    background-color: var(--main-color);
+}
+
+.home-news-sm{
+    margin-bottom: 30px;
+}
+
+.home-n-sm-img{
+    width: 100%;
+    height: 70px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.home-n-sm-img .img-ct{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.home-n-sm-wrapper:hover .img-ct,
+.home-n-sm-wrapper:focus .img-ct{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.home-n-sm-infor{
+    display: block;
+}
+.home-news-sm .p-15{
+    padding-left: 0px;
+}
+.home-n-sm-infor .infor-title{
+    font-size: 0.875rem;
+    font-family: var(--main-font);
+    text-align: left;
+    max-height: 47px; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.home-n-sm-infor:hover .infor-title{
+    color: var(--main-color);
+}
+.home-n-sm-infor .infor-date{
+    color: #747c8f;
+    font-size: 13px;
+}
+
+.activity-img{
+    width: 100%;
+    height: 180px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.activity-img-ct{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.sidebar-document{
+    margin-bottom: 60px;
+}
+.sidebar-document .input-group{
+    margin-bottom: 20px;
+}
+.sidebar-document  .form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+.sidebar-document .btn{
+    border-radius: 0;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.sidebar-document .btn-secondary.focus,
+.sidebar-document .btn-secondary:focus {
+    box-shadow: none;
+}
+
+.document-detail{
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 30px;
+}
+.document-detail .d-date{
+    margin-bottom: 20px;
+}
+.document-detail .d-title{
+    font-size: 1.125rem;
+}
+.document-related{
+    margin-bottom: 60px;
+}
+.document-related .related-title{
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.document-related .related-title::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: var(--main-color);
+    display: inline-block;
+    margin-left: 15px;
+}
