@@ -200,9 +200,10 @@ Home-news
     padding: 15px;
     background-color: #fff;
     position: relative;
+    color: #000;
     top: -35px;
-    -webkit-box-shadow: 0 30px 50px rgba(0,0,0,.03);
-    box-shadow: 0 30px 50px rgba(0,0,0,.03);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,.03);
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
@@ -212,8 +213,8 @@ Home-news
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
-    -webkit-box-shadow: 0 20px 40px rgba(0,0,0,.09);
-    box-shadow: 0 20px 40px rgba(0,0,0,.09);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.09);
+    box-shadow: 0 10px 20px rgba(0,0,0,.09);
 }
 .home-n-lg-infor .infor-title{
     font-size: 1rem;
