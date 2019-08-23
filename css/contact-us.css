@@ -1,0 +1,35 @@
+.form-lienhe{
+    margin: 20px 0 60px;
+}
+.contact-us label{
+    font-weight: bold;
+    font-family: var(--main-font);
+    font-size: 0.875rem;
+    margin-bottom: 7px;
+}
+.contact-us label span{
+    color: var(--main-color);
+}
+.contact-us .form-group{
+    margin-bottom: 20px;
+}
+.contact-us .form-control{
+    padding: 10px 12px;
+    border-radius: 0;
+}
+.contact-us .form-control:focus{
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+.contact-us .btn-sub{
+    border-radius: 0;
+}
+.contact-us{
+    margin-bottom: 60px;
+}
+#map {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px
+}

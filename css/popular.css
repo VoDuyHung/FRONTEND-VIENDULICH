@@ -214,7 +214,7 @@ body {
 .btn-sub:hover, .btn-sub:focus{
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(55, 125, 255, 0.35);
+  box-shadow: 0 4px 17px rgba(192, 32, 47, 0.3);
   color: #fff;
 }
 /*----------------------------------
