@@ -718,6 +718,29 @@ footer
 .logo {
   display:  none;
 }
+/*----------------------------------
+404 page
+----------------------------------*/
+.Error-page{
+  padding: 150px 0;
+}
+.Error-page h3{
+  font-size: 80px;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 20px 0 0;
+}
+.Error-page p{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.Error-page .btn-sub{
+  border-radius: 0;
+}
+/*----------------------------------
+404 page
+----------------------------------*/
 @media (max-width: 1200px) {
   .header-t{
     text-align: left;
