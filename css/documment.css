@@ -188,8 +188,12 @@ sidebar
 /*----------------------------------
 sidebar
 ----------------------------------*/
-
-
+.d-des-box p{
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #000
+}
 .document-detail{
     border-bottom: 1px solid #dfdfdf;
     margin-bottom: 30px;

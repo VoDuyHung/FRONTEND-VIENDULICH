@@ -127,6 +127,26 @@ $(document).ready(function() {
             },
         }
     });
+    $('.new-detail-related-slide').owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: true,
+        autoplay: true,
+        margin: 30,
+        nav: false,
+        autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1200: {
+                items: 3,
+            },
+        }
+    });
     // Back to top button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
