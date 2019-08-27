@@ -1,0 +1,43 @@
+
+/* optional Container STYLES */
+.chart { height: 1000px; margin: 5px; width: 100%; }
+.Treant > .node {  }
+.Treant > p { 
+     font-weight: bold; 
+     font-size: 12px; 
+     text-align: center;
+     font-family: var(--sub-font);
+ }
+.node-name { 
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 7px 0;
+}
+.node-title{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #dddddd;
+}
+.node-chart {
+    background-color: #ffffff;
+    /* border: 1px solid #dfdfdf; */
+    width: 150px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+.node-chart:hover .node-title{
+    color: var(--main-color);
+}
+.Treant .collapse-switch {
+    display: block;
+    cursor: pointer;
+    border-top: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 0;
+}
+.Treant .collapsed .collapse-switch{
+    background-color: transparent;
+}
