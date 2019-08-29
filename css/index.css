@@ -139,6 +139,9 @@ home-program
 .b-right{
     border-right: 1px solid #dfdfdf;
 }
+.b-right:last-child{
+    border-right: none;
+}
 /*----------------------------------
 Home-news
 ----------------------------------*/
@@ -447,24 +450,29 @@ Home-news
 #mess2 li{ 
     display:none;
 }
-#show-more,#show-more1 {
-    padding: 20px 20px;
+.show{
+    padding: 10px;
     border: 1px solid #dfdfdf;
+    background-color: var(--main-color);
+}
+#show-more,#show-more1 {
+    font-size: 20px;
+    padding: 0 15px;
+    color: #fff;
+    display: inline-block;
     cursor: pointer;
-    display: block;
     font-family: var(--main-font);
-    color: var(--main-color);
     font-weight: bold;
 }
 
 #show-less,#show-less1 {
-    padding: 20px 20px;
-    border: 1px solid #dfdfdf;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 20px;
     border-top: 0;
     cursor: pointer;
     display: none;
     font-family: var(--main-font);
-    color: var(--main-color);
     font-weight: bold;
 }
 
