@@ -2,7 +2,6 @@
 	margin-top: -30px;
 }
 .global-content{
-	border-bottom: 1px solid #dfdfdf;
 	margin-bottom: 30px;
 }
 .title-subpage-sidebar p{
@@ -84,20 +83,6 @@
 	text-align: justify;
 
 }
-
-.p-simple-title{
-	font-size: 2rem;
-	font-family: var(--main-font);
-	font-weight: bold;
-}
-.p-simple-title::after{
-	content: "";
-	width: 100px;
-	height: 2px;
-	background-color: var(--main-color);
-	display: block;
-	margin: 10px auto;
-}
 .p-simple-des{
 	line-height: 22px;
 	margin: 20px 0 30px;
@@ -105,6 +90,22 @@
 /*----------------------------------
 partner
 ----------------------------------*/
+.p-simple-title{
+    font-size: 2rem;
+    font-family: var(--main-font);
+    font-weight: bold;
+    padding-top: 30px;
+    border-top: 1px solid #dfdfdf;
+}
+.p-simple-title::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: var(--main-color);
+    display: block;
+    margin: 10px auto;
+    
+}
 .partners {
 	padding-bottom: 60px;
 }
