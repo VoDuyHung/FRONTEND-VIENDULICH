@@ -300,6 +300,7 @@ Home-news
     font-weight: 600;
     line-height: 22px;
     margin-bottom: 5px;
+    color: #000;
 }
 .home-n-sm-infor:hover .infor-title{
     color: var(--main-color);
@@ -345,6 +346,7 @@ Home-news
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    color: #000;
 }
 .message-items .message-ct i{
     color: var(--main-color);
@@ -390,6 +392,7 @@ Home-news
     -o-transition: 0.5s;
     transition: 0.5s;
     margin-bottom: 5px;
+    color: #000;
 }
 .message-items-web  .message-link{
     font-size: 1rem;
