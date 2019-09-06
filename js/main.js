@@ -62,6 +62,8 @@ $(document).ready(function() {
         autoplay: true,
         mouseDrag: true,
         autoplayTimeout: 5000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
     });
     $('.banner-sub-main').owlCarousel({
         items: 1,
