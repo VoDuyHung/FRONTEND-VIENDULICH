@@ -286,7 +286,7 @@ Meet the dean
     height: 100%;
     background-color: #fff;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 .avatar p{
 	display: inline-block;

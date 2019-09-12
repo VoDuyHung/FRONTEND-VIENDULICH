@@ -724,6 +724,11 @@ activities
     }
 }
 @media (max-width: 991px) {
+    .home-n-lg-infor .infor-title,
+    .home-n-lg-infor .infor-des,
+    .home-n-sm-infor .infor-title{
+        max-height: none;
+    }
     .h-banner{
         height: 500px;
     }

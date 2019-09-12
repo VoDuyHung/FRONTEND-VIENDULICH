@@ -325,6 +325,7 @@ Main-menu
     padding: 20px 0;
     height: 90px;
     background-color: #fff;
+    box-shadow: 2px 2px 30px 0px rgba(123, 123, 123, 0.3);
   }
 }
 .nav-menu, .nav-menu * {
@@ -364,13 +365,21 @@ Main-menu
 }
 
 /* Nav Meu Container */
-#nav-menu-container {
+#nav-menu-container{
   width: 100%;
   float: left;
   padding: 9px 0;
   background-color: var(--main-color);
 }
-
+#nav-menu-container .swap-language{
+  display: none;
+}
+#mobile-nav .swap-language{
+  display: block;
+}
+#mobile-nav .swap-language span {
+  display: none;
+}
 @media (max-width: 991px) {
   #nav-menu-container {
     display: none;
